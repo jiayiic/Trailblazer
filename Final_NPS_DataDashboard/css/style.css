@@ -1,0 +1,515 @@
+@import url("style.css") screen and (max-device-width: 400px);
+
+
+.Navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.container {*/
+/*    margin-top: 40px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+
+
+/* Change the navbar background color */
+.Navbar {
+    background-color: #006400; /* A dark green color; replace with any color you like */
+}
+
+/* Change the navbar brand text color */
+.navbar-brand {
+    color: #ffffff; /* White color; replace with any color you like */
+}
+
+/* Change the navbar background color */
+.navbar {
+    background-color: #006400; /* A dark green color; replace with any color you like */
+}
+
+/* Change the navbar brand text color */
+/*.navbar-brand {*/
+/*    color: #ffffff; !* White color; replace with any color you like *!*/
+/*}*/
+
+/* Change the color of navbar links */
+/*.nav-link {*/
+/*    color: #ffffff; !* Gold color; replace with any color you like *!*/
+/*}*/
+
+/* Change the navbar link color on hover */
+.nav-link:hover {
+    /*color: #d2f1dc; */
+    color: #ffffff;
+}
+
+
+.custom-bg-black {
+    background-color: black;
+}
+
+/*#title {*/
+/*    background-color: #fff; !* 设置背景颜色为白色 *!*/
+/*}*/
+
+.no-bullets {
+    list-style-type: none; /* Removes the bullet point */
+    padding: 0; /* Removes padding if not needed */
+    margin: 0; /* Removes margin if not needed */
+    text-align: center;
+}
+
+.text-sm-start {
+    text-align: left !important;
+}
+
+/*#map {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+/*.object-fit-contain {*/
+/*    width: 800px;*/
+/*}*/
+
+/*.card-title-link {*/
+/*    color: #4B9CD3; !* Carolina blue *!*/
+/*    text-decoration: none; !* Remove underline or other decorations *!*/
+/*}*/
+
+/*.bg-carolina-blue {*/
+/*    background-color: #4B9CD3; !* Carolina blue *!*/
+/*}*/
+
+
+/*a.link-color {*/
+/*    color: #4B9CD3; !* Carolina blue *!*/
+/*}*/
+
+
+/*.video-container {*/
+/*    max-width: 560px; !* Adjust this value as needed *!*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*video, iframe {*/
+/*    width: 560;*/
+/*    height: 450;*/
+/*}*/
+
+.chart {
+    width: 85%;
+    height: 340px;
+}
+
+.top-user-input {
+    width: 85%; /* Set the width of the search input */
+    /* Other styles, such as borders, padding, etc. */
+    display: flex;
+}
+
+#user-search-input {
+    flex-grow: 1; /* This allows the input to grow and fill the space */
+    margin-right: 0.5rem; /* Add some space between the input and the button */
+}
+
+#user-search-btn {
+    white-space: nowrap; /* Prevents the text inside the button from wrapping */
+    /*background-color: #212426;*/
+    background-color: #2f3134;
+
+
+}
+
+#user-search-btn:hover {
+    white-space: nowrap; /* Prevents the text inside the button from wrapping */
+    background-color: #dddddd;
+    color: #555555;
+}
+
+
+/* Base styles for the chart */
+#bar-chart-wrapper {
+    width: 100%;
+    max-width: 600px; /* You can set a max width that suits your design */
+    /*margin: auto;*/
+    margin: 35px auto;
+}
+
+#chart1 {
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+.container pie-center {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: auto
+
+}
+
+
+
+
+
+/* Responsive Styles */
+
+@media (max-width: 992px) { /* Adjust breakpoint as needed for 'large' devices */
+    #bar-chart-wrapper {
+        max-width: 100%;
+    }
+
+    #chart1 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed for 'medium' devices */
+    #bar-chart-wrapper {
+        /* Adjust padding or any other style you want to change for medium devices */
+    }
+
+    .d-sm-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* If the text and other elements in .d-sm-flex become too squished, you can adjust their width here */
+    .d-sm-flex > div {
+        width: 90%; /* or 100%, depending on your design needs */
+    }
+}
+
+@media (max-width: 576px) { /* Adjust breakpoint as needed for 'small' devices */
+    #bar-chart-wrapper {
+        /* Adjust padding or any other style you want to change for small devices */
+    }
+
+    .news-input,
+    .showAlert {
+        width: 100%;
+        margin-bottom: 1rem; /* Adds space between input and button on small devices */
+    }
+}
+
+@media (max-width: 900px) {
+    .container pie-center {
+        max-width: 100%;
+    }
+    .title {
+        left: 50%;
+        top: 10%;
+        min-width: 100px;
+        min-height: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .legend {
+        left: 50%;
+        bottom: 5%;
+        min-width: 100px; /* 图例的最小宽度 */
+        min-height: 20px; /* 图例的最小高度 */
+        white-space: nowrap; /* 确保图例不会换行 */
+        overflow: hidden; /* 超出最小尺寸的文本将被隐藏 */
+        text-overflow: ellipsis;
+    }
+}
+
+
+
+
+
+/*.table-wrapper {*/
+/*    width: max-content;*/
+/*    background: #fff;*/
+/*    color: #333;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+/*#table {*/
+/*    table-layout: fixed;*/
+/*}*/
+
+
+#title {
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 767px) {
+    #title {
+        text-align: center;
+        padding-top: 30px;
+    }
+}
+
+/* Default Button Styles */
+.btn {
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 767px) {
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+
+/* Default Table Styles */
+table {
+    width: 100%;
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 767px) {
+    table {
+        overflow-x: auto;
+    }
+}
+
+
+.table-wrapper {
+    width: max-content;
+    max-width: 100%; /* ensure it doesn't overflow the screen width */
+    margin: auto; /* center the table in the wrapper */
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow for depth */
+    overflow-x: auto; /* make table scrollable on small screens */
+}
+
+#table {
+    width: 100%; /* fill the wrapper */
+    table-layout: fixed;
+    border-collapse: collapse; /* collapse borders */
+    font-family: "Segoe UI", Arial, sans-serif; /* modern font */
+}
+
+#table th, #table td {
+    text-align: left; /* align text to the left */
+    padding: 8px 16px; /* padding for cells */
+    border-bottom: 1px solid #ddd; /* subtle bottom border for rows */
+}
+
+#table th {
+    background-color: #f4f4f4; /* light grey background for headers */
+    color: #555; /* darker text for headers */
+    font-weight: bold; /* make header fonts bold */
+}
+
+
+/* Hover effect for rows */
+#table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Zebra striping for rows */
+#table tr:nth-child(odd) {
+    background-color: #fcfcfc;
+}
+
+/* Style for search input */
+.dataTables_filter input {
+    margin-left: 0.5em;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Style for pagination buttons */
+.dataTables_paginate .paginate_button {
+    padding: 5px 10px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.dataTables_paginate .paginate_button.current, .dataTables_paginate .paginate_button:hover {
+    background: #ddd;
+    color: #333;
+}
+
+/* Adjustments for header sorting icons */
+#table th.sorting:after,
+#table th.sorting_asc:after,
+#table th.sorting_desc:after {
+    font-family: "FontAwesome"; /* assuming you're using FontAwesome */
+    margin-left: 5px;
+    color: #666;
+}
+
+#table th.sorting:after {
+    content: "\f0dc"; /* FontAwesome icon for sorting */
+}
+#table th.sorting_asc:after {
+    content: "\f0de"; /* FontAwesome icon for sorting-asc */
+}
+#table th.sorting_desc:after {
+    content: "\f0dd"; /* FontAwesome icon for sorting-desc */
+}
+
+#table th:nth-child(1) { /* targeting the third <th> element, which should be 'State' */
+    width: 20% !important;
+}
+
+#table th:nth-child(2) { /* targeting the third <th> element, which should be 'State' */
+    width: 20% !important;
+}
+
+#table th:nth-child(3) { /* targeting the third <th> element, which should be 'State' */
+    width: 20% !important;
+}
+
+#table th:nth-child(4) { /* targeting the third <th> element, which should be 'State' */
+    width: 20% !important;
+}
+
+#table th:nth-child(5) { /* targeting the third <th> element, which should be 'State' */
+    width: 20% !important;
+}
+
+
+
+
+
+     /* CSS selector for the h2 element within the section with id "learn" */
+/* #popular-act h2 {*/
+/*     font-family: 'Verdana', sans-serif; !* Replace 'Arial' with your preferred font *!*/
+/* }*/
+
+/*!* CSS selector for the p elements (with class "lead") within the section with id "learn" *!*/
+/*#popular-act p.lead {*/
+/*    font-family: 'Verdana', serif; !* Replace 'Times New Roman' with your preferred font *!*/
+/*}*/
+
+/*!* If you want to change the font for the button as well *!*/
+/*#popular-act .btn {*/
+/*    font-family: 'Verdana', sans-serif; !* Replace 'Verdana' with your preferred font *!*/
+/*}*/
+
+
+.chart-container {
+    display: flex;
+    justify-content: left; /* 将饼状图推向容器的末端 */
+    padding: 40px;
+    width: 50%;
+    height: 50%;
+    margin: auto
+}
+
+.mapView-container {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #80ced6; /* Set the background color of the body to steel blue */
+}
+
+
+/*.text-container{*/
+/*    justify-content: center; !* 将饼状图推向容器的末端 *!*/
+/*}*/
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link {
+    display: block;
+    /*padding: 16px;*/
+    white-space: nowrap;
+}
+
+/* Navigator */
+.inspiration-select {
+    display: none;
+    position: absolute;
+}
+
+.nav-link:hover + .inspiration-select,
+.inspiration-select:hover {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1c1b1b;
+    min-width: 100px;
+    padding: 4px 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    right: 0
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown-content a {
+    color: #f0f0f0;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    /*background-color: #f1f1f1;*/
+    /*color: #2a2929;*/
+    /*background-color: #d2f1dc;*/
+    background-color: #f0f0f0;
+    color: #1a2b3c;
+    border-radius: 15px;
+
+}
+
+/*.dropbtn:hover {*/
+/*    background-color: #3e8e41;*/
+/*}*/
+
+
+
+
+
+
+
+@media (min-width: 768px) { /* 针对中等屏幕尺寸及以上 */
+    .col-md-8.chart-container {
+        flex: 0 0 auto; /* 允许容器根据内容调整大小 */
+        max-width: 66.666667%; /* 可以调整这个百分比来增加容器大小 */
+    }
+
+    .col-md-4.text-content {
+        flex: 0 0 auto; /* 允许容器根据内容调整大小 */
+        max-width: 33.333333%; /* 并减少文本容器的最大宽度 */
+    }
+}
+
+
+@media screen and (max-device-width: 400px) {
+
+    　　　　.column {
+        float: none;
+        width:auto;
+    }
+
+    　　　　#sidebar {
+        display:none;
+    }
+
+}
+
+

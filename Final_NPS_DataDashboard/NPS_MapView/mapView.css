@@ -1,0 +1,122 @@
+.mapView-container {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /*background-color: #80ced6; !* Set the background color of the body to steel blue *!*/
+    background-color: #9ddbe1;!important; /* Set the background color of the body to steel blue */
+
+    /*background-color: #bee7e4;!important;*/
+    /*background-color: #a0c7c6;*/
+    position: relative;
+    padding-bottom: 120px;
+    text-align: left; /* Centers your title */
+}
+
+.mapView-container h1 {
+    padding: 10px 0; /* Adds some space above and below the title */
+    margin: 0; /* Removes default margin from the h1 element */
+    font-size: 24px; /* Sets the size of the font */
+    color: #333; /* Sets the color of the font */
+    text-align: center;
+    /* Add any other styles you wish to apply to your title */
+}
+
+#map {
+    /*height: 82vh;*/
+    /*background-color: #80ced6; !* Set the background color of the map to steel blue *!*/
+    /*border: 3px solid #3f7283; !* Example: 3px solid border with a color of #333 (dark grey) *!*/
+    /*box-sizing: border-box;*/
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+
+}
+
+#map-container {
+    /*width: 75%; !* The container will take up 80% of its parent container *!*/
+    width: 80%;
+    /*height: 55vh; !* Adjust the height as necessary *!*/
+    height: 75vh;
+    /*height: calc(100% - 120px);*/
+    /*height: 50%;*/
+    margin: 0 auto; /* This will center the container */
+    border: 3px solid #3f7283; /* Example border */
+    box-sizing: border-box; /* Include the border in the container's size */
+    /*background-color: #80ced6; !* Background color if the map doesn't load or is delayed *!*/
+    border-radius: 30px;
+    position: relative;
+}
+
+
+/*#parkInfo {*/
+/*    margin-top: 0px;*/
+/*    padding: 5px 10px;*/
+/*    background-color: #80ced6; !* Set the background color of the text info to steel blue *!*/
+/*    !*background-color: #a0c7c6;*!*/
+/*    border-radius: 8px;*/
+/*    color: white; !* Set the text color to white for better visibility *!*/
+/*    width: 200px;*/
+/*    flex-shrink: 0;*/
+/*    flex-grow: 0;*/
+/*}*/
+
+#parkInfo h3 {
+    color: #333;
+}
+
+#parkInfo p {
+    margin: 2px 0;
+    /*color: #555;*/
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#stateSelect {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: white; /* Set the background color of the dropdown menu to steel blue */
+    color: black; /* Set the text color to white for better visibility */
+}
+
+.parkInfo-container{
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    /*background-color: rgba(255, 255, 255, 0.7);*/
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000;
+    width: 200px;
+    height: 80px;
+    box-sizing: border-box;
+    /*opacity: 0.5;*/
+}
+
+.mapView-legend {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.mapView-legend-item {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.mapView-legend-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
