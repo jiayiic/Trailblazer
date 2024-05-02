@@ -186,12 +186,13 @@
 @media (max-width: 576px) { /* Adjust breakpoint as needed for 'small' devices */
     #bar-chart-wrapper {
         /* Adjust padding or any other style you want to change for small devices */
+        width: fit-content;
     }
 
     .news-input,
     .showAlert {
         width: 100%;
-        margin-bottom: 1rem; /* Adds space between input and button on small devices */
+        margin-left: 1rem; /* Adds space between input and button on small devices */
     }
 }
 
@@ -479,11 +480,6 @@ table {
 /*.dropbtn:hover {*/
 /*    background-color: #3e8e41;*/
 /*}*/
-
-
-
-
-
 
 
 @media (min-width: 768px) { /* 针对中等屏幕尺寸及以上 */
